@@ -1,0 +1,17 @@
+RGBA covers 32bit
+
+Impostare un Colore:
+
+uint32_t colore = (R << 24) | (G << 16) | (B << 8) | A;
+Cambiare un Componente:
+
+Cambiare Rosso: colore = (colore & 0x00FFFFFF) | (nuovoR << 24);
+Cambiare Verde: colore = (colore & 0xFF00FFFF) | (nuovoG << 16);
+Cambiare Blu: colore = (colore & 0xFFFF00FF) | (nuovoB << 8);
+Cambiare Alfa: colore = (colore & 0xFFFFFF00) | nuovoA;
+Ottenere un Componente:
+
+Rosso: uint8_t R = (colore >> 24) & 0xFF;
+Verde: uint8_t G = (colore >> 16) & 0xFF;
+Blu: uint8_t B = (colore >> 8) & 0xFF;
+Alfa: uint8_t A = colore & 0xFF;
