@@ -1,0 +1,12 @@
+Origin x, y
+Direction x, y
+t(2)
+t = un'equazione di raggio rappresenta un parametro scalare che indica quanto lontano lungo il raggio si trova un punto dal punto di origine. 
+
+
+ray->X = Origin->x + (Direction->x * t)
+ray->Y = Origin->y + (Direction->y * t)
+
+el contesto della geometria dei raggi, ray può essere considerato come la destinazione o il punto di arrivo. Parti dall'Origin e, 
+utilizzando la direzione definita da Direction e il parametro scalare t, calcoli le coordinate di un punto specifico lungo quel raggio. 
+In sostanza, stai coordinando il movimento dall'Origin al punto ray, che rappresenta la tua destinazione finale lungo quel percorso.
